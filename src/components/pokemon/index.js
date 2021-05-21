@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { Container, Card, Image, InfoContainer, Name, PokemonIndex, Type, TypeWrapper} from './styles';
-
+import { useHistory } from 'react-router-dom';
 import json from '../../json';
 
 export default function Pokemon({data, index}) {
+    const history = useHistory();
 
     const [pokemonData, setPokemonData] = useState([]);
     const [pokemonImg, setPokemonImg] = useState();
@@ -23,10 +24,17 @@ export default function Pokemon({data, index}) {
        
     }, [data])
 
+    const handleClick = async (e) => {
+      return history.push({
+          pathname: '/pokeinfo',
+          state: {index: e}
+      });
+  }
+
   return (
     loading ? <h1 style={{textAlign:'center'}}>Loading...</h1> : ( 
       <Container>
-                <Card >
+                <Card onClick={() => handleClick(url)}>
                     <Image src={pokemonImg}/>
                     <InfoContainer>
                         <PokemonIndex>N°{url}</PokemonIndex>
