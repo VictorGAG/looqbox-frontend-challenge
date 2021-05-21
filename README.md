@@ -1,7 +1,7 @@
 # 🚀 Looqbox FrontEnd Challenge
 
 <p align="center">
-    <img src="https://github.com/VictorGAG/looqbox-frontend-challenge/blob/master/Screenshot_1.jpghttps://github.com/VictorGAG/looqbox-frontend-challenge/blob/master/Screenshot_1.jpg">
+    <img src="https://github.com/VictorGAG/looqbox-frontend-challenge/blob/master/Screenshot_1.jpg">
 </p>
 
 ## 🦸 About
